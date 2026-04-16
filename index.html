@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Woo Portfolio</title>
+    <meta
+      name="description"
+      content="모던한 분위기의 개인 포트폴리오. 프로젝트, 기술 스택, 연락처를 한 페이지로 소개합니다."
+    />
+    <link rel="stylesheet" href="./stylr.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header" data-elevate>
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="홈으로 이동">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-text">Woo</span>
+        </a>
+
+        <nav class="nav" aria-label="주요 메뉴">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-label="메뉴 열기"
+          >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+          </button>
+
+          <ul id="nav-menu" class="nav-menu">
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Front-end • UI Engineering</p>
+            <h1 class="hero-title">
+              깔끔하고 빠른 경험을 만드는<br />
+              <span class="accent">개인 포트폴리오</span>
+            </h1>
+            <p class="hero-desc">
+              사용자 관점의 디테일과 성능을 함께 챙기는 웹을 지향합니다. 아래에서
+              최근 작업 3개와 연락 방법을 확인해 주세요.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">프로젝트 보기</a>
+              <a class="btn ghost" href="#contact">연락하기</a>
+            </div>
+
+            <ul class="hero-meta" aria-label="빠른 정보">
+              <li>
+                <span class="meta-k">Based in</span>
+                <span class="meta-v">Korea</span>
+              </li>
+              <li>
+                <span class="meta-k">Focus</span>
+                <span class="meta-v">Web, UI, DX</span>
+              </li>
+              <li>
+                <span class="meta-k">Stack</span>
+                <span class="meta-v">HTML/CSS/JS</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="히어로 이미지">
+            <div class="hero-card">
+              <div class="hero-card-top">
+                <span class="dot red" aria-hidden="true"></span>
+                <span class="dot yellow" aria-hidden="true"></span>
+                <span class="dot green" aria-hidden="true"></span>
+              </div>
+              <div class="hero-card-body">
+                <p class="code-line">
+                  <span class="token">const</span> <span class="token">craft</span>
+                  = <span class="token">"modern"</span>;
+                </p>
+                <p class="code-line">
+                  <span class="token">const</span> <span class="token">detail</span>
+                  = <span class="token">"sharp"</span>;
+                </p>
+                <p class="code-line">
+                  <span class="token">export</span> <span class="token">default</span>
+                  <span class="token">portfolio</span>;
+                </p>
+                <div class="hero-shine" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="floating-badges" aria-hidden="true">
+              <div class="badge">Responsive</div>
+              <div class="badge">Accessible</div>
+              <div class="badge">Vanilla JS</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-desc">
+              카드 형태로 정리한 최근 작업입니다. 링크는 예시로 넣어두었으니
+              원하는 주소로 바꿔 쓰면 됩니다.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-media" data-variant="one" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3 class="card-title">Dashboard UI</h3>
+                <p class="card-desc">
+                  데이터 중심 화면을 빠르게 탐색할 수 있도록 정보 구조와 시각적
+                  위계를 다듬었습니다.
+                </p>
+                <ul class="chips" aria-label="기술 스택">
+                  <li class="chip">HTML</li>
+                  <li class="chip">CSS</li>
+                  <li class="chip">JS</li>
+                </ul>
+                <div class="card-actions">
+                  <a class="link" href="#" target="_blank" rel="noreferrer"
+                    >Live</a
+                  >
+                  <a class="link" href="#" target="_blank" rel="noreferrer"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-media" data-variant="two" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3 class="card-title">Landing Page</h3>
+                <p class="card-desc">
+                  전환을 높이는 구성과 마이크로 인터랙션을 중심으로 가벼운
+                  스크롤 애니메이션을 적용했습니다.
+                </p>
+                <ul class="chips" aria-label="기술 스택">
+                  <li class="chip">Responsive</li>
+                  <li class="chip">A11y</li>
+                  <li class="chip">Motion</li>
+                </ul>
+                <div class="card-actions">
+                  <a class="link" href="#" target="_blank" rel="noreferrer"
+                    >Live</a
+                  >
+                  <a class="link" href="#" target="_blank" rel="noreferrer"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div
+                class="card-media"
+                data-variant="three"
+                aria-hidden="true"
+              ></div>
+              <div class="card-body">
+                <h3 class="card-title">Portfolio Kit</h3>
+                <p class="card-desc">
+                  재사용 가능한 컴포넌트 패턴으로 정리한 템플릿. 다크 톤 기반의
+                  모던한 스타일을 목표로 했습니다.
+                </p>
+                <ul class="chips" aria-label="기술 스택">
+                  <li class="chip">Design</li>
+                  <li class="chip">System</li>
+                  <li class="chip">Tokens</li>
+                </ul>
+                <div class="card-actions">
+                  <a class="link" href="#" target="_blank" rel="noreferrer"
+                    >Live</a
+                  >
+                  <a class="link" href="#" target="_blank" rel="noreferrer"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-muted">
+        <div class="container about">
+          <div>
+            <h2 class="section-title">About</h2>
+            <p class="section-desc">
+              사용자의 “다음 행동”이 자연스럽도록 흐름을 설계하고, 작은 디테일로
+              완성도를 높이는 것을 좋아합니다. 협업에서는 명확한 커뮤니케이션과
+              재현 가능한 문제 해결을 중시합니다.
+            </p>
+          </div>
+
+          <div class="about-panel">
+            <h3 class="panel-title">What I care about</h3>
+            <ul class="list">
+              <li>빠른 로딩과 부드러운 인터랙션</li>
+              <li>반응형 레이아웃과 접근성</li>
+              <li>유지보수 가능한 컴포넌트 구조</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-desc">
+              아래 폼은 데모입니다. 제출 시 간단한 검증 후 “메일 앱 열기” 링크를
+              만들어 드립니다.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <form class="form" id="contact-form" novalidate>
+              <div class="field">
+                <label for="name">이름</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="홍길동"
+                  required
+                />
+                <p class="field-hint" id="hint-name" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">이메일</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="name@example.com"
+                  required
+                />
+                <p class="field-hint" id="hint-email" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="message">메시지</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="어떤 프로젝트/협업을 원하시나요?"
+                  required
+                ></textarea>
+                <p class="field-hint" id="hint-message" aria-live="polite"></p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn primary" type="submit">보내기</button>
+                <button class="btn ghost" type="reset">초기화</button>
+              </div>
+
+              <div class="form-result" id="form-result" aria-live="polite"></div>
+            </form>
+
+            <aside class="contact-aside">
+              <div class="contact-card">
+                <h3 class="panel-title">Quick links</h3>
+                <ul class="contact-links">
+                  <li>
+                    <span class="contact-k">Email</span>
+                    <a class="contact-v" href="mailto:hello@example.com"
+                      >hello@example.com</a
+                    >
+                  </li>
+                  <li>
+                    <span class="contact-k">GitHub</span>
+                    <a class="contact-v" href="#" target="_blank" rel="noreferrer"
+                      >@your-id</a
+                    >
+                  </li>
+                  <li>
+                    <span class="contact-k">LinkedIn</span>
+                    <a class="contact-v" href="#" target="_blank" rel="noreferrer"
+                      >/in/your-id</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="contact-card subtle">
+                <p class="small">
+                  팁: 이메일/깃허브/링크드인 주소는 위 항목만 바꾸면 바로 반영됩니다.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="small">© <span id="year"></span> Woo. All rights reserved.</p>
+        <a class="to-top" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
